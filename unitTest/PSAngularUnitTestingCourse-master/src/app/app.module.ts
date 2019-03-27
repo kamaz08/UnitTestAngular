@@ -1,13 +1,13 @@
 import { NgModule }       from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
-import { FormsModule }    from '@angular/forms';
+import { FormsModule, ReactiveFormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-import {MatButtonModule, MatCardModule} from '@angular/material'
+import {MatButtonModule, MatCardModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatIconModule} from '@angular/material'
 
 
 
@@ -27,6 +27,17 @@ import { MessagesComponent }    from './messages/messages.component';
 import { StrengthPipe } from './strength/strength.pipe';
 import { HeroComponent } from './hero/hero.component';
 import { MyCardComponent } from './my-card/my-card.component';
+import { TestPageComponent } from './test-page/test-page.component';
+import { MyStepperComponent } from './test-page/my-stepper/my-stepper.component';
+import { NumberTestComponentComponent } from './locale/number-test-component/number-test-component.component';
+
+//locale pl
+import { registerLocaleData } from '@angular/common';
+import localepl from '@angular/common/locales/pl';
+import { LocaleComponent } from './locale/locale.component';
+
+registerLocaleData(localepl, 'pl');
+
 
 
 
@@ -34,6 +45,7 @@ import { MyCardComponent } from './my-card/my-card.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
 
@@ -50,7 +62,7 @@ import { MyCardComponent } from './my-card/my-card.component';
 
     BrowserAnimationsModule,
     
-    MatCardModule, MatButtonModule
+    MatCardModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatIconModule
 
 
   ],
@@ -63,7 +75,11 @@ import { MyCardComponent } from './my-card/my-card.component';
     HeroSearchComponent,
     StrengthPipe,
     HeroComponent,
-    MyCardComponent
+    MyCardComponent,
+    TestPageComponent,
+    MyStepperComponent,
+    NumberTestComponentComponent,
+    LocaleComponent
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [ AppComponent ]

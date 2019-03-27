@@ -1,25 +1,13 @@
-<h1>{{title}}</h1>
-<nav>
-  <a routerLink="/dashboard">Dashboard</a>
-  <a routerLink="/heroes">Heroes</a>
-</nav>
-<router-outlet></router-outlet>
-<app-messages></app-messages>
-<div fxLayout.gt-xs="row" fxLayout="column" fxLayoutGap="20px">
-<div fxLayout="column" fxFlex.gt-xs="1 1 calc(15em + 20px)" fxLayoutGap="10px" fxFlexOrder.xs="2"> 
-  <app-my-card [elo]="'a1'" fxFlexOrder.xs="1"></app-my-card>
-  <app-my-card [elo]="'a2'"></app-my-card>
-  <app-my-card [elo]="'a3'"></app-my-card>
-  <app-my-card [elo]="'a4'"></app-my-card>
-  <app-my-card [elo]="'a5'"></app-my-card>
-  <app-my-card [elo]="'a6'"></app-my-card>
-</div>
-<div fxLayout="column" fxFlex.gt-xs="3 3 calc(15em + 20px)" fxLayoutGap="10px" fxFlexOrder.xs="1">  
-    <app-my-card [elo]="'b1'" fxFlexOrder.xs="1" ></app-my-card>
-    <app-my-card [elo]="'b2'" fxFlexOrder.xs="3"></app-my-card>
-    <app-my-card [elo]="'b3'" fxFlexOrder.xs="3"></app-my-card>
-    <app-my-card [elo]="'b4'" fxFlexOrder.xs="3"></app-my-card>
-    <app-my-card [elo]="'b5'" fxFlexOrder.xs="3"></app-my-card>
-    <app-my-card [elo]="'b6'" fxFlexOrder.xs="2"></app-my-card>
-  </div>
-</div>
+<div fxLayout="column" ngStyle.gt-xs="padding: 20px;" fxLayoutGap.gt-xs="20px">
+  <h1>{{title}}</h1>
+  <nav fxLayout="row" fxLayoutAlign="space-between center">
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/heroes">Heroes</a>
+    <a routerLink="/locale">locale</a>
+    <a routerLink="/testpage">testpage</a>
+    <a routerLink="/locale">locale</a>
+    <a routerLink="/testpage">testpage</a>
+  </nav>
+  <router-outlet></router-outlet>
+  <app-messages></app-messages>
+</div> 
