@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LocaleComponent } from './locale.component';
-/*
-describe('LocaleComponent', () => {
-  let component: LocaleComponent;
-  let fixture: ComponentFixture<LocaleComponent>;
+import { ProductListComponent } from './product-list.component';
+
+describe('ProductListComponent', () => {
+  let component: ProductListComponent;
+  let fixture: ComponentFixture<ProductListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LocaleComponent ]
+      declarations: [ ProductListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LocaleComponent);
+    fixture = TestBed.createComponent(ProductListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -22,4 +22,4 @@ describe('LocaleComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});*/
+});

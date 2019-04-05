@@ -35,6 +35,7 @@ import { NumberTestComponentComponent } from './locale/number-test-component/num
 import { registerLocaleData } from '@angular/common';
 import localepl from '@angular/common/locales/pl';
 import { LocaleComponent } from './locale/locale.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
 
 registerLocaleData(localepl, 'pl');
 
@@ -79,7 +80,8 @@ registerLocaleData(localepl, 'pl');
     TestPageComponent,
     MyStepperComponent,
     NumberTestComponentComponent,
-    LocaleComponent
+    LocaleComponent,
+    ProductListComponent
   ],
   providers: [ HeroService, MessageService ],
   bootstrap: [ AppComponent ]
